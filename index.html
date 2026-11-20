@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>วิกฤตโลมาอิรวดี ทะเลสาบสงขลา</title>
+<meta name="description" content="จากหลักร้อยสู่ 13 ตัวสุดท้าย เรื่องของโลมาอิรวดีในทะเลสาบสงขลา ชาวประมงที่เฝ้าดูแล และนโยบายอนุรักษ์ 402 ล้านบาท">
+<link rel="preload" href="assets/fonts/kanit-thai-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="progress"></div>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <img src="assets/img/hero.webp" alt="ภาพวาดโลมาอิรวดีโผล่หัวขึ้นจากผิวน้ำสีเทา">
+  <h1>วิกฤต<span><span class="nw">โลมาอิรวดี</span></span></h1>
+  <div class="sub"><span class="nw">ทะเลสาบสงขลา</span> เหลือ<span class="nw">โลมาอิรวดี</span> 13 ตัวสุดท้าย<small>เลื่อนลงเพื่ออ่านต่อ</small><span class="cue"></span></div>
+</section>
+
+<!-- ============ 1. WHO / WHERE (sticky map) ============ -->
+<section class="scrolly" id="where">
+  <div class="sticky">
+    <div class="mapbox">
+      <div class="map" id="mapAsia">
+        <div class="inner">
+          <img src="assets/img/map-asia.webp" alt="แผนที่เอเชียใต้และเอเชียตะวันออกเฉียงใต้">
+          <div class="pin" style="left:25.5%;top:29%"><i></i><b>อินเดีย</b></div>
+          <div class="pin" style="left:40.6%;top:30%"><i></i><b>เมียนมาร์</b></div>
+          <div class="pin" style="left:54.5%;top:38%"><i></i><b>กัมพูชา</b></div>
+          <div class="pin th" style="left:47.2%;top:56.5%"><i></i><b>ไทย</b></div>
+          <div class="pin" style="left:68%;top:74%"><i></i><b>อินโดนีเซีย</b></div>
+        </div>
+      </div>
+      <div class="map" id="mapLake">
+        <div class="inner">
+          <img src="assets/img/map-lake.webp" alt="แผนที่ทะเลสาบสงขลา จังหวัดพัทลุงและสงขลา">
+          <img class="dolph-pin" src="assets/img/ill-dolphin.webp" alt="" style="left:23%;top:23%">
+          <span class="lbl lake" style="left:24%;top:11%"><span class="nw">ทะเลสาบสงขลา</span>ตอนบน</span>
+          <span class="lbl" style="left:9%;top:36%">จ.พัทลุง</span>
+          <span class="lbl" style="left:42%;top:58%">จ.สงขลา</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="steps">
+    <div class="step" data-map="asia0">
+      <div class="card">
+        <img class="ill-dolphin-card" src="assets/img/ill-dolphin.webp" alt="ภาพวาดโลมาอิรวดี">
+        <div class="kicker">รู้จัก<span class="nw">โลมาอิรวดี</span></div>
+        <p>โลมาที่มีลักษณะเด่นคือ<b>หัวบาก หลังเรียบ ลำตัวสีเทา</b> อาศัยอยู่ในลุ่มน้ำอินโดแปซิฟิก</p>
+      </div>
+    </div>
+    <div class="step" data-map="asia">
+      <div class="card">
+        <p>เป็นโลมาที่หากินอยู่ใกล้ชายฝั่ง บางกลุ่มวิวัฒนาการจนอยู่ใน<b>น้ำจืด</b>ได้ ซึ่งพบในลุ่มน้ำจืด <b class="amber">5 ประเทศ</b></p>
+        <p class="muted">อินเดีย เมียนมาร์ กัมพูชา ไทย และอินโดนีเซีย</p>
+      </div>
+    </div>
+    <div class="step" data-map="lake">
+      <div class="card">
+        <div class="kicker">บริเวณที่พบเห็น<span class="nw">โลมาอิรวดี</span></div>
+        <p>ในไทย สัตว์หายากชนิดนี้อยู่ใน<b class="amber"><span class="nw">ทะเลสาบสงขลา</span></b> พบเห็นมากบริเวณใจกลางของ<b><span class="nw">ทะเลสาบสงขลา</span>ตอนบน</b> ระหว่างจังหวัดพัทลุงกับสงขลา</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bleed">
+  <video data-auto muted loop playsinline preload="none" poster="assets/video/bg-village.jpg"><source src="assets/video/bg-village.mp4" type="video/mp4"></video>
+  <div class="inner">
+    <div class="kicker"><span class="nw">ทะเลสาบสงขลา</span></div>
+    <h2>บ้านหลังสุดท้าย<br>ของ<span class="nw">โลมาอิรวดี</span>ในไทย</h2>
+  </div>
+</section>
+
+<!-- ============ 2. NUMBERS (sticky dolphin grid) ============ -->
+<section class="scrolly" id="numbers">
+  <div class="sticky">
+    <div class="numbg" data-bg="note-clipping" style="background-image:url(assets/img/note-clipping.webp)"></div>
+    <div class="numbg" data-bg="dead-boat" style="background-image:url(assets/img/dead-boat.webp)"></div>
+    <div class="numbg" data-bg="dead-float" style="background-image:url(assets/img/dead-float.webp)"></div>
+    <div class="numbg" data-bg="note-dolphin" style="background-image:url(assets/img/note-dolphin.webp)"></div>
+    <div class="numbg" data-bg="dead-tarp" style="background-image:url(assets/img/dead-tarp.webp)"></div>
+    <div class="gridwrap">
+      <div class="counter" id="count">102</div>
+      <div class="counter-lbl" id="countLbl">ตัว · ก่อน พ.ศ. 2545</div>
+      <div class="dgrid" id="dgrid" aria-hidden="true"></div>
+    </div>
+  </div>
+  <div class="steps">
+    <div class="step right" data-n="102" data-y="ก่อน พ.ศ. 2545">
+      <div class="card"><div class="year">ก่อน พ.ศ. 2545</div><p><span class="nw">โลมาอิรวดี</span>ใน<span class="nw">ทะเลสาบสงขลา</span>มี<b>มากกว่า 100 ตัว</b></p><p class="muted">ช่วงก่อนจะมีการทำประมงปลาบึก โลมาตายเฉลี่ย 4–5 ตัวต่อปี จากสาเหตุที่สันนิษฐานว่าเกยตื้น อุบัติเหตุ หรือการต่อสู้กันตามสัญชาตญาณ</p></div>
+    </div>
+    <div class="step right" data-n="18" data-y="พ.ศ. 2545–2548" data-bg="note-clipping">
+      <div class="card"><div class="year">พ.ศ. 2545–2548</div><p>จำนวนโลมาคงเหลือ <b class="amber">18 ตัว</b></p><p>ปี 2545–2551 มีการจับปลาบึกในทะเลสาบช่วงแรก เหตุผลหลักที่ทำให้โลมาตายคือ<b>การเข้าไปติดเครื่องมือจับปลาบึก</b> เพราะ<span class="nw">โลมาอิรวดี</span>กับปลาบึกมีขนาดใกล้เคียงกัน</p></div>
+    </div>
+    <div class="step right" data-n="18" data-y="พ.ศ. 2550–2555" data-bg="dead-boat">
+      <div class="card"><div class="year">พ.ศ. 2550–2555</div><p>มีการเกยตื้นของ<b>ลูกโลมา</b>เกือบทุกปี มากถึง<b class="coral">ร้อยละ 47.78</b> ของการเกยตื้นทั้งหมด</p><p class="muted">อัตราการตายของโลมาอยู่ที่ราว 10 ตัวต่อปี</p></div>
+    </div>
+    <div class="step right" data-n="27" data-y="พ.ศ. 2558–2562" data-bg="dead-float">
+      <div class="card"><div class="year">พ.ศ. 2558–2562</div><p>จำนวนโลมาคงเหลือ <b class="amber">27 ตัว</b></p></div>
+    </div>
+    <div class="step right" data-n="20" data-y="พ.ศ. 2563" data-bg="note-dolphin">
+      <div class="card"><div class="year">พ.ศ. 2563</div><p>จำนวนโลมาคงเหลือ <b class="amber">20 ตัว</b></p><p class="muted">ปี 2562–2564 อัตราการเกยตื้นเฉลี่ยปีละ 1–2 ตัว</p></div>
+    </div>
+    <div class="step right" data-n="14" data-y="พ.ศ. 2565–2567">
+      <div class="card"><div class="year">พ.ศ. 2565–2567</div><p>จำนวนโลมาคงเหลือ <b class="amber">14 ตัว</b></p></div>
+    </div>
+    <div class="step right" data-n="13" data-y="พ.ศ. 2568" data-bg="dead-tarp">
+      <div class="card"><div class="year">พ.ศ. 2568</div><p>เหลือ <b class="amber">13 ตัวสุดท้าย</b></p><p class="muted">ตลอด 30 ปีที่ผ่านมา <span class="nw">โลมาอิรวดี</span>ตายไปมากกว่า 140 ตัว สถานการณ์จึงเข้าขั้นวิกฤต</p><p class="credit">ภาพพื้นหลัง: กรมทรัพยากรทางทะเลและชายฝั่ง 18 กุมภาพันธ์ 2567</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. TIMELINE CHART ============ -->
+<section class="chart-sec pad" id="timeline">
+  <div class="wrap">
+    <div class="kicker">Timeline</div>
+    <h2 class="big">การเกือบสูญพันธุ์ของ<span class="nw">โลมาอิรวดี</span>ในไทย</h2>
+    <p class="muted" style="margin-top:.5em">จำนวนโลมาที่สำรวจพบในแต่ละช่วงปี และอัตราการตายในช่วงต่าง ๆ</p>
+    <svg id="chart" viewBox="0 0 1000 440" role="img" aria-label="กราฟจำนวนโลมาอิรวดีในทะเลสาบสงขลา ก่อนปี 2545 ราว 102 ตัว ลดลงเหลือ 13 ตัวในปี 2568"></svg>
+    <div class="stats">
+      <div class="stat rv"><div class="n coral">140+</div><p><span class="nw">โลมาอิรวดี</span>ที่ตายในรอบ 30 ปีที่ผ่านมา</p></div>
+      <div class="stat rv"><div class="n">102 → 13</div><p>จากประชากรนับร้อย สู่หลักสิบ</p></div>
+      <div class="stat rv"><div class="n coral">ตาย &gt; เกิด</div><p>อัตราการตายของ<span class="nw">โลมาอิรวดี</span>มีมากกว่าอัตราการเกิดทดแทน</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. CAUSES ============ -->
+<section class="bleed" id="why">
+  <video data-auto muted loop playsinline preload="none" poster="assets/video/bg-traps.jpg"><source src="assets/video/bg-traps.mp4" type="video/mp4"></video>
+  <div class="inner">
+    <h2>แล้วอะไร<br>ทำให้โลมา<span class="amber">หายไป?</span></h2>
+    <button class="aud" data-src="assets/audio/voiceover.mp3"><span class="b"></span><span class="t">ฟังเสียงบรรยาย สาเหตุที่โลมาเสี่ยงสูญพันธุ์<small>4 นาที</small><span class="bar"><i></i></span></span></button>
+  </div>
+</section>
+
+<section class="pad">
+  <div class="text rv">
+    <p class="lead"><span class="nw">โลมาอิรวดี</span>เจอปัญหาจาก<b class="amber">มนุษย์</b>เกือบทั้งสิ้น และส่งผลให้สภาพแวดล้อมที่โลมาอาศัยอยู่เปลี่ยนแปลงไป</p>
+  </div>
+  <div class="wrap causes">
+    <article class="cause">
+      <div class="num">01 · ปัจจัยหลัก</div>
+      <div class="art">
+        <svg class="depth" viewBox="0 0 300 150" aria-label="โลมาต้องการน้ำลึก 2-3 เมตร แต่ทะเลสาบลึกเฉลี่ย 1.5 เมตร">
+          <rect x="0" y="10" width="300" height="140" fill="#2a3d44"/>
+          <rect x="0" y="10" width="140" height="120" fill="#8fc1d4" opacity=".35"/>
+          <rect x="160" y="10" width="140" height="60" fill="#8fc1d4" opacity=".75"/>
+          <rect x="160" y="70" width="140" height="80" fill="#6b5a45"/>
+          <text x="70" y="145" text-anchor="middle">ที่โลมาอยู่ 2–3 ม.</text>
+          <text x="230" y="64" text-anchor="middle" fill="#1c292e">ปัจจุบัน ~1.5 ม.</text>
+          <text x="230" y="115" text-anchor="middle" fill="#d9c9b0">ตะกอน ดินโคลน</text>
+        </svg>
+      </div>
+      <h3>ทะเลสาบตื้นเขิน</h3>
+      <p>ตะกอนและดินโคลนจากแผ่นดินและกิจกรรมของมนุษย์สะสมที่ก้นทะเลสาบ <span class="nw">โลมาอิรวดี</span>อาศัยที่ระดับความลึก 2–3 เมตร แต่ปัจจุบันทะเลสาบลึกเฉลี่ยเพียง 1.5 เมตร เหมือนเพดานบ้านที่ต่ำลงจนอึดอัด</p>
+    </article>
+    <article class="cause">
+      <div class="num">02</div>
+      <div class="art" style="flex-direction:column;gap:12px">
+        <div style="display:flex;gap:10px;align-items:center"><img src="assets/img/ill-fish1.webp" alt="" style="height:54px"><img src="assets/img/ill-fish3.webp" alt="" style="height:40px"><img src="assets/img/ill-fish2.webp" alt="" style="height:24px"></div>
+        <div class="biobar">
+          <div style="width:100%">ราว 40 ปีก่อน · มากกว่า 450 ชนิด</div>
+          <div style="width:24%;background:var(--coral)">~100 ชนิด</div>
+        </div>
+      </div>
+      <h3>สัตว์น้ำที่เป็นอาหารลดลง</h3>
+      <p><span class="nw">ทะเลสาบสงขลา</span>เคยมีสัตว์น้ำมากกว่า 450 ชนิด ปัจจุบันเหลือราว 100 กว่าชนิด อาหารที่ลดลงกระทบสุขภาพและความอยู่รอดของโลมาโดยตรง</p>
+    </article>
+    <article class="cause">
+      <div class="num">03</div>
+      <div class="art"><img src="assets/img/ill-factory.webp" alt="โรงงาน" style="height:120px"><img src="assets/img/ill-house.webp" alt="บ้านเรือน" style="height:105px"></div>
+      <h3>มลพิษและน้ำเน่าเสีย</h3>
+      <p>น้ำเสียจากโรงงาน การเกษตร และชุมชนรอบทะเลสาบ ทำให้คุณภาพน้ำเสื่อมโทรมลง</p>
+    </article>
+    <article class="cause">
+      <div class="num">04</div>
+      <div class="art"><img src="assets/img/ill-dolphin.webp" alt="" style="height:70px;opacity:.6"><img src="assets/img/ill-dolphin-calf.webp" alt="ลูกโลมา" style="height:44px"></div>
+      <h3>ประชากรน้อย เลือดชิด</h3>
+      <p>โลมามีจำนวนน้อยและกระจายเป็นกลุ่มย่อย การผสมพันธุ์ซ้ำในกลุ่มเดิมทำให้ลูกโลมาอ่อนแอ มีปัญหาสุขภาพ และโอกาสรอดต่ำ บางครั้งโลมายังสู้กันเองตามธรรมชาติจนเกยตื้นตาย</p>
+    </article>
+    <article class="cause wide">
+      <div class="txt">
+        <div class="num">05 · สาเหตุการตายหลัก</div>
+        <div class="art" style="justify-content:flex-start"><img src="assets/img/ill-net.webp" alt="อวน" style="height:150px"><div style="display:flex;flex-direction:column;gap:6px"><img src="assets/img/ill-catfish.webp" alt="ปลาบึก" style="height:46px"><img src="assets/img/ill-dolphin.webp" alt="โลมาอิรวดี" style="height:60px"></div></div>
+        <h3>เครื่องมือประมง</h3>
+        <p>อวนปลาบึก โพงพาง และเครื่องมือดักจับปลาอื่น ๆ ทำให้โลมาบาดเจ็บ ตาย และขวางทางว่ายน้ำ <span class="nw">โลมาอิรวดี</span>กับปลาบึกมีขนาดใกล้เคียงกันจึงติดอวนปลาบึกได้ง่าย การจับสัตว์น้ำที่เป็นอาหารของโลมายังทำให้โลมาหาอาหารยากขึ้น</p>
+      </div>
+      <figure class="media">
+        <video data-auto muted loop playsinline preload="none" poster="assets/video/clip-net-carcass.jpg" style="width:100%;border-radius:6px"><source src="assets/video/clip-net-carcass.mp4" type="video/mp4"></video>
+        <figcaption>ชาวประมงกู้เครื่องมือดักสัตว์น้ำกลาง<span class="nw">ทะเลสาบสงขลา</span> · ภาพ: ชมรมอนุรักษ์<span class="nw">โลมาอิรวดี</span></figcaption>
+      </figure>
+    </article>
+    <article class="cause wide">
+      <div class="txt"><div class="num">06</div>
+      <h3>เขื่อนและโครงการของมนุษย์</h3>
+      <p>เขื่อนกั้นน้ำที่ปากระวะปิดทางน้ำที่ไหลจากทะเลเข้าสู่ทะเลสาบ การไหลเวียนของน้ำผิดปกติ สัตว์น้ำบางชนิดเข้ามาวางไข่ตามฤดูกาลไม่ได้ ยังมีใบพัดเรือที่สัญจรในทะเลสาบ และโครงการสะพานตัดทะเลสาบระหว่างสงขลากับพัทลุงที่กำลังจะเกิดขึ้น</p></div>
+      <figure class="media"><img src="assets/video/bg-bridge.jpg" alt="สะพานข้ามทะเลสาบสงขลา" style="width:100%;border-radius:6px"><figcaption><span class="nw">ทะเลสาบสงขลา</span></figcaption></figure>
+    </article>
+  </div>
+</section>
+
+<!-- ============ 5. COMMUNITY ============ -->
+<section class="bleed" id="people">
+  <img src="assets/img/lake-stakes.webp" alt="ทะเลสาบสงขลา มีหลักไม้และเครื่องมือประมงปักเรียงในน้ำ">
+  <div class="inner">
+    <h2>แล้วมนุษย์เคยทำอะไร<br>เพื่อโลมาและธรรมชาติบ้างไหม?</h2>
+  </div>
+</section>
+
+<section class="pad">
+  <div class="text rv">
+    <p class="lead">ที่ตำบลเกาะใหญ่ อำเภอกระแสสินธุ์ จังหวัดสงขลา เป็นที่ตั้งของ<b class="amber">ชมรมอนุรักษ์<span class="nw">โลมาอิรวดี</span></b> ซึ่งชาวประมงรอบ<span class="nw">ทะเลสาบสงขลา</span>ร่วมกันตั้งขึ้นมานานกว่า 25 ปี</p>
+    <p>เริ่มจากชาวประมงคนหนึ่ง <b>ลุงนวย อุทัย ยอดจันทร์</b> ที่ถูกจุดประกายจากคำถามง่าย ๆ ว่า <b class="amber">“ตอนนี้มี<span class="nw">โลมาอิรวดี</span>อยู่กี่ตัว”</b> ความอยากรู้ค่อย ๆ กลายเป็นความรักในโลมา</p>
+  </div>
+
+  <div class="stack" style="margin-top:56px">
+    <div class="person rv">
+      <div class="ph"><img src="assets/img/p-nuai.webp" alt="ลุงนวย อุทัย ยอดจันทร์"></div>
+      <div class="q">
+        <blockquote>โลมาวิกฤตแล้ว 14 ตัวสุดท้าย แต่ปัจจุบันนี้ลุงก็ไม่แน่ใจว่ามีกี่ตัวได้ ถ้าถามคนในกลุ่มอนุรักษ์ของลุง ก็อยากมีไว้ รักษาไว้ได้ก็อยากให้อยู่ชั่วลูกหลาน</blockquote>
+        <div class="who">อุทัย ยอดจันทร์ (ลุงนวย)<small>หัวหน้าชมรมอนุรักษ์<span class="nw">โลมาอิรวดี</span></small></div>
+        <button class="aud" data-src="assets/audio/nuai-heart.mp3"><span class="b"></span><span class="t">ความในใจลุงนวย<small>เสียงสัมภาษณ์ 51 วินาที</small><span class="bar"><i></i></span></span></button><br>
+        <button class="aud" data-src="assets/audio/nuai-catfish.mp3"><span class="b"></span><span class="t">ลุงนวยเล่าเรื่องปลาบึก<small>เสียงสัมภาษณ์ 49 วินาที</small><span class="bar"><i></i></span></span></button>
+      </div>
+    </div>
+
+    <div class="person flip rv">
+      <div class="ph"><img src="assets/img/p-chalong.webp" alt="ฉลอง ขุนดำ"></div>
+      <div class="q">
+        <blockquote>เรามีการประชาสัมพันธ์ให้คนได้รู้ว่า โลมาเป็นสัตว์ที่หายาก เพราะฉะนั้นขอให้พวกเราทั้งหมดช่วยอนุรักษ์ดูแล อีกส่วนนึงก็รณรงค์ให้กลุ่มประมงของเรา กลุ่มอนุรักษ์ของเราปลูกบ้านปลา เพื่อสร้างบ้านปลาให้ปลาได้มีการวางไข่</blockquote>
+        <div class="who">ฉลอง ขุนดำ<small>สมาชิกชมรมอนุรักษ์<span class="nw">โลมาอิรวดี</span></small></div>
+        <button class="aud" data-src="assets/audio/chalong.mp3"><span class="b"></span><span class="t">ฟังเสียงสัมภาษณ์<small>46 วินาที</small><span class="bar"><i></i></span></span></button>
+      </div>
+    </div>
+
+    <div class="person rv">
+      <div class="ph"><img src="assets/img/p-paitoon.webp" alt="ไพฑูรย์ คชเสนี"></div>
+      <div class="q">
+        <blockquote>ก็เลยได้ช่วยกันตั้งเป็นกลุ่มเพื่ออนุรักษ์โลมาไว้ให้ได้อยู่ในทะเลสาบตลอดไป ก็เลยชวนประชาสัมพันธ์ ออกสร้างเครือข่ายกับชาวประมงที่จับปลาอยู่ใน<span class="nw">ทะเลสาบสงขลา</span>ฝั่งพัทลุง ของสองฝั่ง ให้ช่วยกันดูแล ช่วยกันป้องกัน มีปัญหาอะไรก็ได้รายงาน</blockquote>
+        <div class="who">ไพฑูรย์ คชเสนี<small>สมาชิกชมรมอนุรักษ์<span class="nw">โลมาอิรวดี</span></small></div>
+        <button class="aud" data-src="assets/audio/paitoon.mp3"><span class="b"></span><span class="t">ฟังเสียงสัมภาษณ์<small>1 นาที 19 วินาที</small><span class="bar"><i></i></span></span></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap" style="margin-top:80px">
+    <div class="split">
+      <div class="rv">
+        <div class="kicker">งานหลักคือการกระจายข้อมูล</div>
+        <h2 class="big">บันทึกของลุงนวย</h2>
+        <p style="margin-top:.8em">ชมรมเน้นการสอดส่องดูแลและเก็บข้อมูลเพื่อแจ้งหน่วยงานรัฐ เป็นแหล่งเรียนรู้เรื่อง<span class="nw">โลมาอิรวดี</span>ให้โรงเรียนและหน่วยงานต่าง ๆ และร่วมมือกับนักวิจัยในการออกตามหาโลมา</p>
+        <p>สมุดเล่มนี้คือบันทึกส่วนหนึ่งของลุงนวย ประธานชมรม ทั้งจุดที่พบโลมา วันที่ และภาพซากโลมาแต่ละตัวที่เจอ</p>
+      </div>
+      <figure class="rv"><img class="zoomable" src="assets/img/logbook.webp" alt="สมุดบันทึกของลุงนวย มีภาพวาดโลมาและข้อความลายมือ" style="border-radius:6px"></figure>
+    </div>
+    <div class="media-row land">
+      <figure><video data-auto muted loop playsinline preload="none" poster="assets/video/clip-mapping.jpg"><source src="assets/video/clip-mapping.mp4" type="video/mp4"></video><figcaption>ระบุจุดบนแผนที่<span class="nw">ทะเลสาบสงขลา</span>ระหว่างการสัมภาษณ์</figcaption></figure>
+      <figure><img class="zoomable" src="assets/img/club-banner.webp" alt="ป้ายชมรมอนุรักษ์โลมาอิรวดี"><figcaption>ป้ายชมรมอนุรักษ์<span class="nw">โลมาอิรวดี</span></figcaption></figure>
+    </div>
+    <div class="media-row">
+      <figure><video data-auto muted loop playsinline preload="none" poster="assets/video/clip-notebook.jpg"><source src="assets/video/clip-notebook.mp4" type="video/mp4"></video><figcaption>สมุดจดบันทึกการพบเห็นโลมา</figcaption></figure>
+      <figure><video data-auto muted loop playsinline preload="none" poster="assets/video/clip-fishhouse.jpg"><source src="assets/video/clip-fishhouse.mp4" type="video/mp4"></video><figcaption>เครื่องมือดักสัตว์น้ำของชาวประมงรอบทะเลสาบ</figcaption></figure>
+      <figure><img class="zoomable" src="assets/img/logbook-sketch.webp" alt="หน้าสมุดบันทึกที่มีภาพร่าง"><figcaption>บันทึกลายมือในสมุดของชมรม</figcaption></figure>
+    </div>
+  </div>
+
+  <div class="text" style="margin-top:72px">
+    <div class="kicker">อัลบั้มของชมรม</div>
+    <p class="muted">ภาพซากโลมาที่ชมรมเก็บรวบรวมไว้ตลอดหลายปี <span class="coral">บางภาพอาจกระทบความรู้สึก</span></p>
+  </div>
+  <div class="album" id="album">
+    <img src="assets/img/album-4237.webp" alt="ภาพในอัลบั้มชมรม" loading="lazy">
+    <img src="assets/img/album-4238.webp" alt="ภาพซากโลมาในอัลบั้มชมรม" loading="lazy">
+    <img src="assets/img/album-4239.webp" alt="ภาพซากโลมาในอัลบั้มชมรม" loading="lazy">
+    <img src="assets/img/nuai-1375.webp" alt="ซากโลมาลอยข้างเรือ" loading="lazy">
+    <img src="assets/img/album-4241.webp" alt="ภาพซากโลมาในอัลบั้มชมรม" loading="lazy">
+    <img src="assets/img/nuai-1374.webp" alt="เจ้าหน้าที่ตรวจซากโลมา" loading="lazy">
+    <img src="assets/img/album-4244.webp" alt="ภาพซากโลมาในอัลบั้มชมรม" loading="lazy">
+    <img src="assets/img/nuai-1377.webp" alt="ซากโลมาริมน้ำ" loading="lazy">
+    <img src="assets/img/album-4245.webp" alt="ข่าวหนังสือพิมพ์เรื่องโลมาในอัลบั้มชมรม" loading="lazy">
+    <img src="assets/img/nuai-1383.webp" alt="ซากโลมาในเรือ" loading="lazy">
+    <img src="assets/img/album-4246.webp" alt="ภาพซากโลมาในอัลบั้มชมรม" loading="lazy">
+    <img src="assets/img/nuai-1384.webp" alt="ซากโลมาลอยในทะเลสาบ" loading="lazy">
+    <img src="assets/img/album-4242.webp" alt="ภาพในอัลบั้มชมรม" loading="lazy">
+  </div>
+  <p class="hint">เลื่อนซ้าย–ขวา หรือแตะภาพเพื่อขยาย · ภาพ: ชมรมอนุรักษ์<span class="nw">โลมาอิรวดี</span></p>
+</section>
+
+<!-- ============ 6. STATE ============ -->
+<section class="pad" id="state" style="background:var(--bg2)">
+  <div class="text rv">
+    <div class="kicker">ภาครัฐ</div>
+    <h2 class="big">รัฐดำเนินการอนุรักษ์<span class="nw">โลมาอิรวดี</span>อย่างไรบ้าง?</h2>
+  </div>
+  <div class="wrap" style="margin-top:48px">
+    <div class="split">
+      <img class="doc zoomable rv" src="assets/img/law-doc.webp" alt="เอกสารประกาศเกี่ยวกับสัตว์ป่าสงวน">
+      <div class="rv">
+        <p>รัฐเพิ่ม<span class="nw">โลมาอิรวดี</span>เป็น<b class="amber">สัตว์สงวนและสัตว์คุ้มครอง</b> ตาม พ.ร.บ.สงวนและคุ้มครองสัตว์ป่า พ.ศ. 2535</p>
+        <p>และประกาศ<b>เขตห้ามล่าสัตว์ป่าใน<span class="nw">ทะเลสาบสงขลา</span> (ทะเลหลวง)</b> จังหวัดพัทลุง–สงขลา เพื่อคุ้มครอง<span class="nw">โลมาอิรวดี</span></p>
+        <p class="muted">ในพื้นที่คุ้มครองพิเศษนี้ ชาวประมงยังทำประมงได้ตามปกติ ยกเว้นเครื่องมือที่เป็นอันตรายต่อโลมา เช่น อวนปลาบึก อวนปลากะพง ซึ่งห้ามเด็ดขาด ภายใต้ พ.ร.บ.สงวนและคุ้มครองสัตว์ป่า พ.ศ. 2562</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pad motto">
+  <div class="text rv">
+    <p class="muted"><span class="nw">โลมาอิรวดี</span>เป็นตัวบ่งบอกความสมบูรณ์ของระบบนิเวศ</p>
+    <p class="huge head">หากโลมาอยู่ได้<br>คนก็อยู่ได้</p>
+    <p class="muted">นั่นคือเหตุผลที่เราควรอนุรักษ์ไว้ให้คงอยู่</p>
+  </div>
+</section>
+
+<section class="bleed" id="plan402">
+  <video data-auto muted loop playsinline preload="none" poster="assets/video/bg-bridge.jpg"><source src="assets/video/bg-bridge.mp4" type="video/mp4"></video>
+  <div class="inner">
+    <p class="head">ปี 2568 มีการอนุมัตินโยบายอนุรักษ์<span class="nw">โลมาอิรวดี</span> มูลค่า</p>
+    <div class="money">402 <small><span class="nw">ล้านบาท</span></small></div>
+    <p class="head">ระยะเวลา 5 ปี ทำควบคู่ไปกับการสร้างสะพานตัด<span class="nw">ทะเลสาบสงขลา</span>–พัทลุง</p>
+  </div>
+</section>
+
+<section class="pad">
+  <div class="wrap">
+    <div class="split">
+      <div class="rv">
+        <div class="kicker">เป้าหมายของแผน</div>
+        <h2 class="big">อนุรักษ์<span class="nw">โลมาอิรวดี</span>ใน<span class="nw">ทะเลสาบสงขลา</span>ให้คงอยู่อย่างยั่งยืน</h2>
+        <div class="goal"><div class="g" id="goal"></div><div class="arr">13 → 20 ตัว ใน 5 ปี</div></div>
+      </div>
+      <div class="rv">
+        <div class="kicker">จุดประสงค์ของแผน</div>
+        <p>แท้จริงแล้วแผนนี้เน้นไปที่<b class="amber">การฟื้นฟูที่อยู่อาศัยของโลมา</b> หรือก็คือ<span class="nw">ทะเลสาบสงขลา</span> เพราะจะไม่เพียงแต่โลมาเท่านั้นที่ได้ประโยชน์ คนเองก็ได้ประโยชน์ด้วยเช่นกัน</p>
+        <p class="note">ข้อมูลจากการสัมภาษณ์ผู้อำนวยการ<span class="nw">ศูนย์วิจัย</span>ทรัพยากรทางทะเลและชายฝั่งอ่าวไทยตอนล่าง (ศวทล.)</p>
+      </div>
+    </div>
+    <h3 class="head rv" style="margin-top:56px;font-size:1.3em">องค์ประกอบของแผน 6 ด้าน</h3>
+    <div class="plan rv">
+      <div>ลดภัยคุกคามของ<span class="nw">โลมาอิรวดี</span></div>
+      <div>ฟื้นฟูความสมบูรณ์ของถิ่นที่อยู่อาศัย</div>
+      <div>ศึกษาและวิจัย<span class="nw">โลมาอิรวดี</span>ใน<span class="nw">ทะเลสาบสงขลา</span></div>
+      <div>วิจัยและพัฒนาเทคโนโลยีเพื่อเพิ่มประชากรโลมา</div>
+      <div>ส่งเสริมเศรษฐกิจชุมชนที่ยั่งยืนควบคู่การอนุรักษ์</div>
+      <div>บริหาร จัดการ ประเมิน และติดตามผลโครงการ</div>
+    </div>
+    <button class="btn" data-lb="assets/img/plan-infographic.webp">ดูแผนผังแผนอนุรักษ์ฉบับเต็ม</button>
+  </div>
+</section>
+
+<!-- ============ 7. RESEARCHERS ============ -->
+<section class="pad" id="research" style="background:var(--bg2)">
+  <div class="text rv">
+    <div class="kicker">เสียงจากนักวิจัย</div>
+    <h2 class="big">นักวิชาการด้านทรัพยากรทางทะเลและชายฝั่งมองนโยบายนี้อย่างไร</h2>
+  </div>
+  <div class="person rv" style="margin-top:48px">
+    <div class="ph" style="background:#e9e4dc"><img src="assets/img/p-suwat.webp" alt="ผศ.ดร.สุวัฒน์ จุฑาพฤทธิ์" style="object-fit:cover;object-position:50% 20%"></div>
+    <div class="q">
+      <blockquote>งานฟื้นฟูที่ผมมอง อยากให้เป็นแบบ HABITAT (ถิ่นกำเนิด) มากกว่า ถ้ามันเกิดขึ้นได้จะเป็นประโยชน์ในการฟื้นฟูทรัพยากรสัตว์น้ำ แล้วการปล่อยลูกพันธุ์สัตว์น้ำเป็นเรื่องประจำปีที่กรมประมงต้องทำอยู่แล้ว ผมรู้สึกว่าไม่จำเป็นต้องมีงบตรงนี้ขึ้นมาทำ</blockquote>
+      <div class="who">ผศ.ดร.สุวัฒน์ จุฑาพฤทธิ์<small>นักวิจัย มหาวิทยาลัยสงขลานครินทร์ วิทยาเขตสุราษฎร์ธานี</small></div>
+    </div>
+  </div>
+
+  <div class="wrap" style="margin-top:64px">
+    <h3 class="head rv" style="font-size:1.3em">สรุปความเห็นของนักวิจัยต่อแผน</h3>
+    <div class="verdicts rv">
+      <div><b>ข้อกังวล</b>อยากให้มุ่งหาทางออกให้ชาวประมงมีทางเลือกอาชีพ มากกว่าการหากินกับทะเลสาบเพียงอย่างเดียว</div>
+      <div><b>ข้อกังวล</b>งบประมาณและกิจกรรมบางอย่างอาจซ้ำซ้อนกันระหว่างหน่วยงาน</div>
+      <div class="ok"><b>เห็นด้วย</b>ควรฟื้นฟูเชิงถิ่นที่อยู่อาศัยของสัตว์</div>
+      <div class="ok"><b>เห็นด้วย</b>ควรวิจัยเชิงวิทยาศาสตร์และความรู้เชิงชีววิทยาของ<span class="nw">โลมาอิรวดี</span></div>
+    </div>
+  </div>
+
+  <div class="text rv" style="margin-top:64px">
+    <blockquote>น้ำเสียจากการเพาะเลี้ยงในกระชังจะไหลลงตรงกลางทะเลสาบหมดเลย อันนั้นก็จะเป็นเรื่องที่ต้องวาดแผนต่อไปในอนาคต หรือการแปรรูป หรืออาชีพอื่น ๆ ต้องดูเรื่องวงจรการทำอาชีพว่า การใช้เครื่องมือประมงมันเป็นความเสี่ยง มีอาชีพอะไรมาทดแทนเขาได้ แล้วมีความยั่งยืนในการใช้ประโยชน์จริง ๆ หรือเปล่า</blockquote>
+    <div class="who">ความเห็นของนักวิจัย</div>
+  </div>
+</section>
+
+<section class="pad" id="proposal">
+  <div class="text rv">
+    <div class="kicker">ข้อเสนอแนวทางการจัดการ<span class="nw">โลมาอิรวดี</span></div>
+    <blockquote>ถ้าเราคิดจะเอาตัวนี้ให้อยู่ คุณต้องศึกษามันเชิงละเอียดและลึกก่อน หรือถ้าจะย้ายมันออกไปอยู่ทะเลข้างนอก คุณก็ต้องศึกษาก่อนว่ามันปรับตัวเข้ากับทะเลข้างนอกได้ไหม หรือจะเอาน้ำทะเลข้างนอกมาใส่ข้างใน ก็ต้องดูก่อนว่ามันปรับตัวเข้ากับระบบน้ำในทะเลสาบที่เน่าขุ่นเละขนาดนี้ได้หรือเปล่า ซึ่งยังไม่มีใครรู้ การศึกษาวิจัยพวกนั้นไม่เคยมีใครทำ</blockquote>
+  </div>
+  <div class="wrap" style="margin-top:64px">
+    <div class="split r">
+      <div class="rv">
+        <h2 class="big">จัดตั้ง<span class="amber"><span class="nw">ศูนย์วิจัย</span><span class="nw">โลมาอิรวดี</span></span></h2>
+        <p class="muted">ตามตัวอย่างของจีน ในโครงการของ Institute of Hydrobiology, Chinese Academy of Sciences</p>
+        <ul class="dots">
+          <li>ศูนย์พักฟื้นและรักษาโลมาที่บาดเจ็บ</li>
+          <li>ศึกษาวิจัยเชิงลึก เช่น สุขภาพโลมา การปรับตัวเมื่ออยู่ในกระชัง และพฤติกรรมต่าง ๆ</li>
+          <li>สถานที่ฝึก Dolphin Trainer ของภาครัฐ และพื้นที่ทำงานจริงของนักวิจัย</li>
+          <li>เปิดให้คนเข้าชมโลมาโดยเก็บค่าเข้าชม และเป็นศูนย์การเรียนรู้</li>
+        </ul>
+      </div>
+      <div class="rv">
+        <img class="zoomable" src="assets/img/china-2760.webp" alt="ภาพตัวอย่างการดูแลโลมาหัวบาตรหลังเรียบในจีน" style="border-radius:6px">
+        <img class="zoomable" src="assets/img/china-3060.webp" alt="บ่อเลี้ยงและฟื้นฟูโลมาในศูนย์วิจัยของจีน" style="border-radius:6px;margin-top:10px">
+        <p class="credit">ภาพจากการนำเสนอของ ผศ.ดร.สุวัฒน์ จุฑาพฤทธิ์ ระหว่างการสัมภาษณ์</p>
+      </div>
+    </div>
+    <h3 class="head rv" style="margin-top:56px;font-size:1.3em">ถ้ามี<span class="nw">ศูนย์วิจัย</span> ใครได้ประโยชน์</h3>
+    <div class="benefit rv">
+      <div><h4>นักวิจัย</h4>ได้ข้อมูลทางวิทยาศาสตร์และชีววิทยาของโลมาเพิ่มขึ้น</div>
+      <div><h4>ชาวบ้าน</h4>มีงานใน<span class="nw">ศูนย์วิจัย</span> ทั้งเป็นเจ้าหน้าที่ ฝึกเป็น dolphin trainer หรือทำธุรกิจร่วมกับศูนย์</div>
+      <div><h4>คนทั่วไป</h4>มีศูนย์การเรียนรู้ และเข้าชมโลมาได้</div>
+      <div><h4><span class="nw">ศูนย์วิจัย</span></h4>มีรายได้จากการเปิดให้เข้าชม</div>
+    </div>
+    <figure class="media-row land rv" style="max-width:640px;margin-left:auto;margin-right:auto">
+      <figure><video data-auto muted loop playsinline preload="none" poster="assets/video/clip-museum.jpg"><source src="assets/video/clip-museum.mp4" type="video/mp4"></video><figcaption>หุ่นจำลองโลมาในศูนย์เรียนรู้ธรรมชาติวิทยาสัตว์และพืชทะเล</figcaption></figure>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ CLOSING ============ -->
+<section class="bleed closing">
+  <video data-auto muted loop playsinline preload="none" poster="assets/video/bg-view.jpg"><source src="assets/video/bg-view.mp4" type="video/mp4"></video>
+  <div class="inner">
+        <blockquote>การจัดการเป็นการจัดการที่ตัวคน มุ่งเน้นไปที่การจัดการที่ตัวคน มนุษย์เนี่ยสำคัญที่สุด</blockquote>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap cols">
+    <div>
+      <h4>ผู้ให้สัมภาษณ์</h4>
+      <ul>
+        <li>อุทัย ยอดจันทร์ (ลุงนวย) หัวหน้าชมรมอนุรักษ์<span class="nw">โลมาอิรวดี</span></li>
+        <li>ฉลอง ขุนดำ สมาชิกชมรมอนุรักษ์<span class="nw">โลมาอิรวดี</span></li>
+        <li>ไพฑูรย์ คชเสนี สมาชิกชมรมอนุรักษ์<span class="nw">โลมาอิรวดี</span></li>
+        <li>ผู้อำนวยการ<span class="nw">ศูนย์วิจัย</span>ทรัพยากรทางทะเลและชายฝั่งอ่าวไทยตอนล่าง</li>
+        <li>ผศ.ดร.สุวัฒน์ จุฑาพฤทธิ์ มหาวิทยาลัยสงขลานครินทร์ วิทยาเขตสุราษฎร์ธานี</li>
+      </ul>
+    </div>
+    <div>
+      <h4>ภาพและข้อมูล</h4>
+      <ul>
+        <li>ภาพซากโลมา: ชมรมอนุรักษ์<span class="nw">โลมาอิรวดี</span> และกรมทรัพยากรทางทะเลและชายฝั่ง</li>
+        <li>ภาพ<span class="nw">ศูนย์วิจัย</span>ในจีน: จากการนำเสนอของ ผศ.ดร.สุวัฒน์ จุฑาพฤทธิ์</li>
+        <li>ตัวเลขประชากรและอัตราการตาย: ข้อมูลที่ทีมผู้จัดทำรวบรวม ณ ปี 2568</li>
+      </ul>
+    </div>
+    <div>
+      <h4>ผู้จัดทำ</h4>
+      <!-- TODO: ใส่ชื่อทีมผู้จัดทำ / สถาบัน ตรงนี้ -->
+      <ul><li>พัฒนาจากผลงานต้นฉบับใน Canva เรื่อง “วิกฤต<span class="nw">โลมาอิรวดี</span>”</li></ul>
+    </div>
+  </div>
+</footer>
+
+<div id="lb" role="dialog" aria-label="ภาพขยาย"><img alt=""></div>
+<script src="main.js"></script>
+</body>
+</html>

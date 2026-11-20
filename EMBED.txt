@@ -1,0 +1,26 @@
+วิธีขึ้นเว็บและฝัง iframe
+
+1) อัปโหลดทั้งโฟลเดอร์นี้ (index.html, style.css, main.js และโฟลเดอร์ assets) ขึ้นเซิร์ฟเวอร์ให้อยู่ด้วยกัน
+   เช่น https://example.com/irrawaddy/
+
+2) โค้ดฝัง (แนะนำ: iframe สูงเท่าจอ เลื่อนอ่านในกรอบ ทำให้แผนที่และตัวนับโลมาแบบ sticky ทำงานครบ)
+
+<iframe src="https://example.com/irrawaddy/index.html"
+        title="วิกฤตโลมาอิรวดี ทะเลสาบสงขลา"
+        style="width:100%;height:100vh;border:0;display:block"
+        allow="autoplay; fullscreen" loading="lazy"></iframe>
+
+3) ถ้าเว็บปลายทางต้องการให้ iframe ยืดสูงตามเนื้อหา หน้าเว็บนี้ส่งความสูงออกมาทาง postMessage
+   (type: "irrawaddy:height") แต่ในโหมดนี้ส่วน sticky จะไม่ค้างหน้าจอ จึงแนะนำแบบข้อ 2 มากกว่า
+
+<script>
+window.addEventListener('message', e => {
+  if (e.data && e.data.type === 'irrawaddy:height') {
+    document.querySelector('iframe[title^="วิกฤตโลมา"]').style.height = e.data.height + 'px';
+  }
+});
+</script>
+
+ไฟล์ที่ควรแก้เพิ่ม
+- index.html ส่วน footer มี TODO ให้ใส่ชื่อทีมผู้จัดทำ
+- ชื่อ ผอ.ศวทล. ยังไม่ได้ใส่ (ใน Canva ชื่ออยู่ในคลิปวิดีโอ อ่านไม่ชัด)
